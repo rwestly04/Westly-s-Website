@@ -1,0 +1,62 @@
+body {
+    margin: 0;  /* tinatanggal ang default margin ng browser*/
+    font-family: Arial, sans-serif; /* pinapalitan nito ang font ng buong page*/
+    background-color: #f2f2f2;  /* kulay ng background ay lightgrey*/
+    color: #333; /* default color ng text*/
+}
+nav {
+    background-color: #1565c0;  /*kulay ng navigation bar*/
+    padding: 10px 20px; /* space sa loob ng nav*/
+    display: flex;    /* ginagawa flex container ang nav*/
+    justify-content: center;  /* cinecenter ang links */
+    gap: 20px;    /*distance sa pagitan ng mg link */
+}
+nav a {
+    text-decoration: none;   /* tinatanggal ang underline sa  links */
+    color: white;     /* kulay ng text sa link */
+    font-weight: bold;    /* ginawang bold ang text ng links*/
+    padding: 6px 12px;      /* space sa loob ng links*/
+    border-radius: 4px;      /* pabilog na sulok ng links*/
+    transition: background-color 0.3s;   /* smooth effect*/
+}
+nav a:hover {
+    background-color: #1976D2; /* kulay blue na hover*/
+}
+
+nav a.active {
+    background-color: #0d47a1;   /* dark blue na kulay para sa active page*/
+}
+
+main {
+    padding: 40px 20px;  /* space sa paligid ng main content */
+    max-width: 800px;  /* maximum width content */
+    margin: auto;     /* gitna sa page*/
+    background-color: white;  /* white color na background */
+    border-radius: 10px;   /* pabilog na sulog ng main content*/ 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* shadow effect sa content */
+
+}
+h1, h2, h3 {
+    color: #333;  
+}
+
+p {
+    line-height: 1.6;  /* space sa pagitan ng mga line*/
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        padding: 20px 10px;
+    }
+}
